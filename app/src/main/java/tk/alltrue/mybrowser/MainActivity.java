@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         mWebView = findViewById(R.id.webView);
         mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.loadUrl("http://alltrue.tk");
+        mWebView.loadUrl("http://developer.alexanderklimov.ru/android");
+        mWebView.setWebViewClient(new MyWebViewClient());
     }
 }
