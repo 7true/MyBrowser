@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyBrowser</string>
+    <string name="title_activity_second">Second</string>
+    <string name="click">Click It</string>
 </resources>

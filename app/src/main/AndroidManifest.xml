@@ -9,12 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+       <!-- <activity android:name=".MainActivity"
                   android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>-->
+        <activity android:name=".FirstAct"
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondAct"
+                  android:label="@string/title_activity_second" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="tk.alltrue.Browser" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http" />
             </intent-filter>
         </activity>
     </application>
