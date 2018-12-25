@@ -16,9 +16,10 @@ public class FirstAct extends AppCompatActivity {
 
     }
     public void onClick(View view) {
-        Intent intent = new
-                Intent("tk.alltrue.Browser");
-        intent.setData(Uri.parse("http://alltrue.tk/"));
-        startActivity(intent);
+//        Intent intent = new Intent("tk.alltrue.Browser");
+//        intent.setData(Uri.parse("http://alltrue.tk/"));
+        Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                Uri.parse("http://alltrue.tk"));
+        startActivity(Intent.createChooser(intent, "Open with"));
     }
 }
